@@ -1,16 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" MasterPageFile="~/MasterPage.master"%>
+
+
+
+<asp:Content ID="head" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-    <title>Web Contact Form</title>
-</head>
-
-<body>
-    <form id="form1" runat="server">
-
         <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
 
@@ -35,6 +29,4 @@
         <!-- End your 'If' statement. -->
         <%End If%>
 
-    </form>
-</body>
-</html>
+</asp:Content>

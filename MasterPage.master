@@ -7,17 +7,20 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <h1>Recipies</h1>
-        <p><h2>using 5 Ingedients or Less!</h2>
+        <h2>using 5 Ingedients or Less!</h2>
+        <div id="navigation">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         |<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
-        |<asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink>
+        |<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         |<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactForm/default.aspx">Contact</asp:HyperLink>
-        </p><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>

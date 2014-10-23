@@ -35,6 +35,8 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
             <Fields>
                 <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
