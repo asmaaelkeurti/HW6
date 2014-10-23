@@ -37,6 +37,7 @@
         <br />
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
+        <div>
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
             <Fields>
                 <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
@@ -51,6 +52,6 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
-    
+        </div>
     </div>
 </asp:Content>
