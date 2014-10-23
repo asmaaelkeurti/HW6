@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
     <div>
         <h1>Recipies</h1>
-        <h2>using 5 Ingedients or Less!</h2>
+        <h2>Using 5 Ingedients or Less!</h2>
         <div id="navigation">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         |<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>

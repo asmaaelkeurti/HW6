@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Recipe.aspx.vb" Inherits="detail" MasterPageFile="~/MasterPage.master"%>
 <asp:Content ID="head" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!DOCTYPE html>
-    <div>
+    <!DOCTYPE html>
+    
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_stateFacts %>" DeleteCommand="DELETE FROM [weijli_recipe] WHERE [ID] = @ID" InsertCommand="INSERT INTO [weijli_recipe] ([name], [submit], [one], [two], [three], [four], [five], [preparation], [note]) VALUES (@name, @submit, @one, @two, @three, @four, @five, @preparation, @note)" SelectCommand="SELECT * FROM [weijli_recipe] WHERE ([ID] = @ID)" UpdateCommand="UPDATE [weijli_recipe] SET [name] = @name, [submit] = @submit, [one] = @one, [two] = @two, [three] = @three, [four] = @four, [five] = @five, [preparation] = @preparation, [note] = @note WHERE [ID] = @ID">
             <DeleteParameters>
@@ -35,22 +35,36 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <div>
+        <div class="content">
+        <asp:Label ID="Label1" runat="server"></asp:Label>
         <br />
-        <div>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+        
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1"
+            HeaderText="Recipe Detail"
+            CssClass="cssdetailsview"
+            HeaderStyle-CssClass="header"
+            FieldHeaderStyle-CssClass="fieldheader"
+            CommandRowStyle-CssClass="command" Width="460px"
+            
+            >
+<CommandRowStyle CssClass="command"></CommandRowStyle>
+
+<FieldHeaderStyle CssClass="fieldheader"></FieldHeaderStyle>
             <Fields>
-                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                <asp:BoundField DataField="submit" HeaderText="submit" SortExpression="submit" />
-                <asp:BoundField DataField="one" HeaderText="one" SortExpression="one" />
-                <asp:BoundField DataField="two" HeaderText="two" SortExpression="two" />
-                <asp:BoundField DataField="three" HeaderText="three" SortExpression="three" />
-                <asp:BoundField DataField="four" HeaderText="four" SortExpression="four" />
-                <asp:BoundField DataField="five" HeaderText="five" SortExpression="five" />
-                <asp:BoundField DataField="preparation" HeaderText="preparation" SortExpression="preparation" />
-                <asp:BoundField DataField="note" HeaderText="note" SortExpression="note" />
+                <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
+                <asp:BoundField DataField="submit" HeaderText="Submitted By" SortExpression="submit" />
+                <asp:BoundField DataField="one" HeaderText="First Ingredient" SortExpression="one" />
+                <asp:BoundField DataField="two" HeaderText="Second Ingredient" SortExpression="two" />
+                <asp:BoundField DataField="three" HeaderText="Third Ingredient" SortExpression="three" />
+                <asp:BoundField DataField="four" HeaderText="Fourth Ingredient" SortExpression="four" />
+                <asp:BoundField DataField="five" HeaderText="Fifth Ingredient" SortExpression="five" />
+                <asp:BoundField DataField="preparation" HeaderText="Preparation" SortExpression="preparation" />
+                <asp:BoundField DataField="note" HeaderText="Notes" SortExpression="note" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
+
+<HeaderStyle CssClass="header"></HeaderStyle>
         </asp:DetailsView>
         </div>
     </div>

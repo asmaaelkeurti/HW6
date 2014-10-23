@@ -1,4 +1,4 @@
-﻿body {
+﻿body {background-color:tan;
 }
 
 h1 {text-align:center;
@@ -9,3 +9,50 @@ h2 {text-align:center;
 
 #navigation {text-align:center;
 }
+
+.content {
+    width:80%;
+    margin:auto;
+}
+
+.cssgridview {
+    width:70%;
+    background-color:coral;
+}
+
+    .cssgridview td {
+        padding:10px;
+        color:#FFFFFF;
+    }
+
+    .cssgridview th {
+        padding:4px 2px;
+        color:#808080;
+        background-color:yellow;
+    }
+        .cssgridview td a {text-decoration:none;color:#696969;
+        }
+.cssdetailsview{
+    background-color:#FFFFFF; width:80%;
+}
+    .cssdetailsview td {
+        padding:10px;
+        color:#808080;
+    }    
+    
+    .cssdetailsview .header td{
+    padding:4px 2px; color:silver;background:#424242;text-align:center;
+}
+    .cssdetailsview .fieldheader {text-align:right;
+                                  color:black;
+    }
+
+    .cssdetailsview .command {
+        background:#424242;
+    }
+    .cssdetailsview .command td{
+        text-align:center;
+    }
+        .cssdetailsview .command a {
+            color:silver;text-decoration:none;background-color:green;margin:4px 2px;padding:4px 2px;
+        }

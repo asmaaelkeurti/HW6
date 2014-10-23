@@ -4,7 +4,7 @@
 
 <asp:Content ID="head" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>
-    <div>
-    some bullshit
+    <div class="content">
+    I really don't like silver color(#696969)<br /> i switch silver with #808080
     </div>
 </asp:Content>
