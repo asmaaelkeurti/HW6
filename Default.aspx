@@ -44,7 +44,7 @@
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
                 <asp:BoundField DataField="submit" HeaderText="submit" SortExpression="submit" />
-                <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="detail.aspx?ID={0}" Text="Select" />
+                <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="Recipe.aspx?ID={0}" Text="Select" />
             </Columns>
         </asp:GridView>
     
